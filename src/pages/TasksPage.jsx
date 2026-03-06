@@ -391,10 +391,11 @@ export default function TasksPage() {
                                     </button>
                                 )}
                                 <div style={styles.iconBtns}>
+                                     {task.status !== 'COMPLETED' && (
                                     <button
                                         onClick={() => { setEditTask(task); setShowModal(true); }}
                                         style={styles.iconBtn} title="Edit"
-                                    >✏️</button>
+                                    >✏️</button>)}
                                     <button
                                         onClick={() => openDeleteModal(task)}
                                         style={styles.iconBtnDanger} title="Delete"
