@@ -16,7 +16,7 @@ npm install
 ## Connecting to Backend
 
 The frontend connects to the backend at `http://localhost:8080`.
-This is set in `src/api/axiosClient.js`:
+This is set in `src/config`:
 ```javascript
 const BASE_URL = 'http://localhost:8080';
 ```
